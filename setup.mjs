@@ -21,7 +21,7 @@ const dbStore = {
     return { result: this.__data.set(k, v) };
   },
 };
-await td.replaceEsm('…/storage.mjs', {
+await td.replaceEsm('./storage.mjs', {
   createTransaction: function mock_createTransaction(db, fn) {
     return new Promise((res, rej) => {
       fn(dbStore)
