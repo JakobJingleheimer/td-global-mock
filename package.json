@@ -1,0 +1,18 @@
+{
+  "name": "td-global-mock",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./tokens.mjs",
+  "type": "module",
+  "engines": {
+    "node": "21.x.x"
+  },
+  "scripts": {
+    "test": "node --no-warnings --loader=testdouble --loader=./alias.loader.mjs --import ./setup.mjs --test ./tokens.test.mjs"
+  },
+  "author": "Jacob Smith",
+  "license": "ISC",
+  "devDependencies": {
+    "testdouble": "^3.20.1"
+  }
+}
